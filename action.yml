@@ -1,8 +1,12 @@
-name: 'Hello World p'
-description: 'json to html table'
-branding:
-  icon: 'code'
-  color: 'orange'
+name: Hello Wolrd
+
+description: This action says hello world
+
 runs:
-  using: 'node12'
-  main: 'src/main.py'
+  using: docker # we are saying this action will run on docker
+  image: 'src/Dockerfile' # we will use our own Dockerfile to build an image and run it.
+
+# for publishing purposes
+branding: #generates a logo for our action
+  icon: arrow-down #icon of the image
+  color: orange # background color of the logo of our action
