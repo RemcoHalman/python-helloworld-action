@@ -1,0 +1,8 @@
+name: 'Hello World p'
+description: 'json to html table'
+branding:
+  icon: 'code'
+  color: 'orange'
+runs:
+  using: 'node12'
+  main: 'src/main.py'
